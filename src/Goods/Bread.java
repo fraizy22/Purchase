@@ -9,7 +9,7 @@ package Goods;
 public class Bread extends Good {
 
     public Bread() {
-        super("Bread",2.10);
+        super("Bread", 2.10);
     }
 
 }

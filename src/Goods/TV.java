@@ -9,7 +9,7 @@ package Goods;
 public class TV extends Good {
 
     public TV() {
-        super("TV",120.30);
+        super("TV", 120.30);
     }
 
 }

@@ -16,6 +16,15 @@ public class Purchase {
     ArrayList<BasketGood> basketGoods;
 
     /**
+     * Format three columns for the sales check.
+     *
+     * @return Amount of money left after purchase in the wallet
+     */
+    private String columnize(String col1, String col2, String col3) {
+        return String.format("%-10s %4s %14s", col1, col2, col3);
+    }
+
+    /**
      * Sum the shopping basket and prepair the sales check.
      */
     public void makeSalesCheck() {
@@ -51,10 +60,6 @@ public class Purchase {
         }
 
         return this.wallet;
-    }
-
-    private String columnize(String col1, String col2, String col3) {
-        return String.format("%-10s %4s %14s", col1, col2, col3);
     }
 
     /**
